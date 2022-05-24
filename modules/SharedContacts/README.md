@@ -1,0 +1,1 @@
+# Aurora shared contacts module 

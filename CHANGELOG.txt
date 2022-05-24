@@ -1,0 +1,253 @@
+[9.4.0]
++ Sharing encrypted files is now supported
+* Database indexing refactored to boost performance on installations with large number of users
+* Improved check for MySQL native driver
+* Corrected multiple issues in shared calendars affecting reminders and invitations
+* Translation updates
+* Various bugfixes
+
+[9.3.3]
+[+] cPanel installer for v9 is made available
+[*] Fixed issue with database prefix used with au_adav_sharedfiles table
+[*] Corrected issue with mails not sent out by MailScheduledMessages module
+
+[9.3.2]
+[+] Implemented user groups and sharing files with groups of users
+[+] Implemented Team user group, for file sharing purposes, automatically populated with Team contacts
+[*] Contacts and users management refactoring
+[*] IMAP and SMTP hosts for external mail clients are now used for iOS profile
+[*] Mobile layout for Onlyoffice is automatically enabled when viewing attachments from a smartphone browser
+[*] Database migration rewritten, UTF8 is now used as a default charset for database access
+[*] Corrected multiple issues with handling reminders
+[*] Corrected exception handling in MailScheduledMessages module
+[*] Fixed issue with selecting folder for filters
+[*] Fixed issues with creating and deleting tenants
+[*] Fixed various issues with files sharing functionality
+[*] Miscellaneous bugfixes
+
+[9.3.1]
+[*] Fixed various issues with files and folders sharing
+[*] Corrected issues with deleting users, mailservers and email accounts
+[*] Dropbox integration issue corrected
+[*] GetAuthenticatedAccount method in Core module updated
+[*] Fixed encoding-related issues in Create/Update Tables
+[*] Corrected PHP 8.* compatibility issues
+[*] Translations corrected in IframeApp module
+[*] HorizontalLayoutByDefault setting in MailWebclient is now treated correctly
+
+[9.3.0]
+[+] File sharing rewritten: permissions system improved, shared files can be moved and renamed, recipient can leave share (Aurora Corporate and Aurora Files only)
+[*] Fixed "Over quota" issue when setting user space limit for Files
+[*] Quota-related fixes in MTA versions
+[*] Miscellaneouse bugfixes
+
+[9.2.0]
+[+] Search in multiple folders
+[+] Multiple themes support in Chat (Aurora Corporate / Aurora Files only)
+[*] Various bugfixes in Mail and Calendar modules
+
+[9.1.1]
+[*] Mail login form bugfixes and layout improvements
+[*] Fixed password issue in two factor authentication module
+[*] Closed XSS vulnerability in Files
+[*] Various bugfixes
+
+[9.1.0]
+[+] Rocket.Chat integration (Aurora Corporate / Aurora Files only)
+[*] Corrected issues with user signup on cPanel
+[*] Various bugfixes
+
+[9.0.1]
+[+] Web-based migration script from v8
+[*] Fixed missing Files settings in admin panel
+[*] Default file quotas migrated from v8 are handled correctly
+[*] Corrected issue with opening public links
+
+[9.0.0]
+[+] Laravel Eloquent is now used for database layer
+[+] Migration script from EAV tables of v8 to v9 database structure
+[+] Admin panel redesigned with Vue.js framework
+[*] Stronger cryptography for storing passwords in database
+[*] Modules included into the product by default reviewed for compatibility
+[*] DirectAdmin and Plesk installers updated
+
+[8.8.1]
+[+] Document converter and version history implemented for office document editor
+[*] Files list view redesigned, with action buttons added
+[*] Various bugfixes
+
+[8.8.0]
+[+] Office document editor
+[+] IP whitelisting added for Recaptcha
+[+] EnableFailedLoginBlock records are now deleted after they expire
+[+] Added setting for hiding Logout link
+[*] Fixed issue with displaying angle brackets in server error messages
+
+[8.6.1]
+[*] Fixed an issue with Global Address Book 
+[*] Fixed an issue with automatic encryption of the messages
+
+[8.6.0]
+[*] Various bugfixes
+
+[8.5.4]
+[*] Addressing DAV-related security issue
+
+[8.5.3]
+[*] Various bugfixes
+
+[8.5.2]
+[+] Added lang parameter to SSO entry point
+[*] Data directory protection improved
+[*] "Update configuration" now handles main config.json file as well
+[*] Dropbox integration updated
+[*] Various bugfixes
+
+[8.5.1]
+[+] MultipleFilesUploadLimit setting is added
+[+] Uploading directory with subdirectories
+[+] Improvements related to storing PGP keys in Contacts
+[+] Show encryption vector (IV) and AES key in UI
+[+] VCF export includes contact groups now
+[*] Various bugfixes
+
+[8.5.0]
+[+] Secure shared links functionality
+[+] Paranoid encryption revised, PGP is used now
+[*] Fixed issue with public links for folders
+[*] Various bugfixes
+
+[8.3.20]
+[*] Minor bugfixes
+
+[8.3.19]
+[*] Minor bugfixes
+
+[8.3.18]
+[+] Storing last login info for user account
+[+] Added DAV support for login matching username rather than email
+[+] X-Originating-IP header name is now configurable
+[+] Branding module now allows for enabling custom Iframe
+[+] ReCaptcha functionality configuration extended
+[+] Users counter added in admin interface
+[*] Mail login form issues fixed
+[*] PHP 7.3 compatibility issues corrected
+[*] User activity logs were not updated on login
+[*] External links corrected in mobile version
+
+[8.3.16]
+[+] S3 storage is supported for personal and corporate files
+[*] Recaptcha enabled in mobile version now
+[*] Fixed issue with Recaptcha used in mail login form
+[*] Fixed issue with sending mail in mobile version using linked account
+[*] Fixed issue with clicking external link in mobile version
+[*] Public links to files are now correctly retained upon moving the file
+[*] For shared files, owner is now displayed correctly
+[*] Various bugfixes
+
+[8.3.15]
+[*] French and Spanish translations updated
+[*] Fixed issue with contacts duplication in global address book
+[*] Fixed issue with sharing contacts
+[*] Fixed issue with LogStackTrace setting being ignored
+[*] Minor bugfixes
+
+[8.3.10]
+[*] Various bugfixes
+[*] Closed CVE-2019-16238 vulnerability
+
+[8.3.9]
+[*] Various bugfixes
+
+[8.3.8]
+[+] Implemented HTTP Digest Authentication on DAV-server
+[*] Various bugfixes
+
+[8.3.7]
+[+] Methods of handling contacts and groups rewritten and improved
+[*] Web API of Core module for admin panel entities management improved
+[*] Various bugfixes
+
+[8.3.6]
+[+] Security header for all cookies
+[*] Minor bugfixes
+
+[8.3.5]
+[+] Authorization header adjustments in .htaccess file
+[*] Minor bugfixes
+
+[8.3.4]
+[*] Various bugfixes
+[*] IE bugfixes
+
+[8.3.3]
+[+] Ability to store AuthToken in database
+[+] Adding custom JS and HTML supported
+[*] Update configuration bugfix
+[*] Creating new note fixed
+[*] Accessing folder via public link fixed
+[*] DAV access issue corrected
+
+[8.3.2]
+[*] Minor bugfixes
+
+[8.3.1]
+[*] Various bugfixes
+
+[8.3.0]
+[+] Sand theme inspired by default one of v7
+[*] Contacts autocompletion includes groups
+
+[8.2.19]
+[*] Minor bugfixes
+
+[8.2.18]
+[*] Various bugfixes
+
+[8.2.17]
+[*] Miscellaneous bugfixes and improvements
+
+[8.2.16]
+[*] DAV libraries and migration scripts updated
+
+[8.2.15]
+[+] OverrideUserSettings module
+[+] Sharing Files in Aurora
+[*] Various bugfixes
+
+[8.2.11]
+[+] ReCaptcha support added
+[*] Various bugfixes
+
+[8.2.9]
+[*] Minor bugfixes
+
+[8.2.7]
+[*] Two factor authentication and DAV conflict fixed
+
+[8.2.6]
+[*] Bug fixes
+
+[8.2.5]
+[*] Various bugfixes
+
+[8.2.4]
+[+] Two factor authentication module is available for installing
+[*] Used different obfuscation algorithm to work around detecting sensitive files as malware
+[*] Fixed issues with setting cookie when installation accessed via index.php file
+[*] Major refactoring resulting in performance boost
+[*] Miscellaneous bugfixes
+
+[8.2.3]
+[*] Fixed authentication issue when accessing calendar or address book via direct DAV URL
+[*] Folders in Files module were not sorted alphabetically
+[+] Create/Update tables tool is available in Database Settings screen of admin area
+
+[8.1.4]
+[+] Current Beta release.
+
+[8.1.0]
+[+] Bugfixes.
+
+[8.0.0]
+[+] Beta release on Aurora platform.

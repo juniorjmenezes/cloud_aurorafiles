@@ -1,0 +1,22 @@
+{
+    "Disabled": [
+        false,
+        "bool"
+    ],
+    "LoginLogo": [
+        "https:\/\/www.cruz.ce.gov.br\/cloud-sesa\/cloud_sesa_complete.png",
+        "string"
+    ],
+    "TabsbarLogo": [
+        "https:\/\/www.cruz.ce.gov.br\/cloud-sesa\/cloud_sesa.png",
+        "string"
+    ],
+    "TopIframeUrl": [
+        "",
+        "string"
+    ],
+    "TopIframeHeightPx": [
+        0,
+        "int"
+    ]
+}

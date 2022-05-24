@@ -1,0 +1,77 @@
+{
+	"system": {
+		"XFrameOptions": "SAMEORIGIN"
+	},
+	"modules": {
+		"Core": {
+			"SiteName": "Afterlogic Aurora Files",
+			"ProductName": "Afterlogic Aurora Files",
+			"AllowGroups": true
+		},
+		"CoreWebclient": {
+			"HeaderModulesOrder": ["files", "contacts"],
+			"DefaultAnonymScreenHash": "login",
+			"DefaultUserScreenHash": "files",
+			"ThemeList": ["Default", "DeepForest", "Funny", "Sand"]
+		},
+		"DropboxAuthWebclient": {
+			"Scopes": "auth"
+		},
+		"OAuthIntegratorWebclient": {
+			"AllowNewUsersRegister": false
+		},
+		"FilesWebclient": {
+			"ShowCommonSettings": true,
+			"ShowFilesApps": false,
+			"PublicLinksEnabled": false
+		},
+		"Dropbox": {
+			"Disabled": true
+		},
+		"DropboxFilestorage": {
+			"Disabled": true
+		},
+		"StandardLoginFormWebclient": {
+			"UseDropdownLanguagesView": true,
+			"BottomInfoHtmlText": "Powered by <a href=\"https:\/\/afterlogic.org\/aurora-files\" target=\"_blank\">Afterlogic Aurora Files</a>"
+		},
+		"StandardRegisterFormWebclient": {
+			"BottomInfoHtmlText": "Powered by <a href=\"https:\/\/afterlogic.org\/aurora-files\" target=\"_blank\">Afterlogic Aurora Files</a>"
+		},
+		"OverrideUserSettings": {
+			"Disabled": true
+		},
+		"Contacts": {
+			"ImportContactsLink": "https://afterlogic.com/docs/aurora-files/frequently-asked-questions/importing-contacts"
+		},
+		"S3Filestorage": {
+			"Disabled": true
+		},
+		"S3CorporateFilestorage": {
+			"Disabled": true
+		},
+		"OpenPgpFilesWebclient": {
+			"EnableSelfDestructingMessages": false,
+			"EnablePublicLinkLifetime": false
+		},
+		"MobileAppsWebclient": {
+			"ShowMailAndroidApp": false,
+			"ShowMailIosApp": false,
+			"ShowFilesServerUrlApp": false
+		},
+		"TwoFactorAuth": {
+			"Disabled": true,
+			"FacetIds": [
+				"android:apk-key-hash:fbENTvCSeR-AwJV5rrrBsb98p-jEw0c5SSOMul_KwaI",
+				"android:apk-key-hash:ruyLw8eJtT5fZ1ZusXSCHTp0yMZIlr6CVx5kq76ApiQ",
+				"android:apk-key-hash:aEdaWviMajF83fPsXVc1yaZVUy1OiKakbZqP62f5D48"
+			]
+		},
+		"OfficeDocumentEditor": {
+			"Disabled": true
+		},
+		"RocketChatWebclient": {
+			"Disabled": true
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+    "Disabled": [
+        true,
+        "bool"
+    ],
+    "ChatUrl": [
+        "",
+        "string"
+    ],
+    "AdminUsername": [
+        "",
+        "string"
+    ],
+    "AdminPassword": [
+        "",
+        "string"
+    ],
+    "UnreadCounterIntervalInSeconds": [
+        15,
+        "int"
+    ],
+    "EnableLogging": [
+        false,
+        "bool"
+    ]
+}
